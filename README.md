@@ -13,7 +13,7 @@ I tested the plugin with Unity 5.3.1 and a Galaxy Note 4. I just finished some p
 
 ## Changes to the old Plugin
 
-You can now use "AttachByMacAddress", which allows your application to attach your myo device from start. You have to change the MAC Address in ThalmicHub.cs and call "ThalmicHub.AttachByMacAddress()" in one of your scripts.
+You can now use "AttachByMacAddress", which allows your application to attach your myo device from start. You have to change the MAC Address in ThalmicHub.cs and call "ThalmicHub.AttachByMacAddress()" in one of your scripts. In the demo scene this is done in the JointOrientation Start method.
 I used the Box On a Stick demo this time, which is delivered with the official Thamlic Myo Unity Plugin. Its also a mix with a existing Plugin which supports iOS. I never tested it, cause i dont own any iOS devices, perhaps someone could do this for me.
 
 ## Getting Started
@@ -25,10 +25,6 @@ I used the Box On a Stick demo this time, which is delivered with the official T
 4. In Player Settings you have to set your Bundle Identifier
 5. Also set minimum API Level 18 (Android 4.3 'Jelly Bean'). Everything else in Player Settings should be optional.
 6. Now you should be able to build and deploy to your Android device.
-
-## The API
-
-When you build your own scene, you simply need to have a GameObject thats called "MyoManager" with the MyoManger script attached to it. For an out of the box solution, there is also a prefab included which you can drag into your scene. You now can start the plugin via "MyoManager.Initialize", the other methods are called in the same manner. The code below represents the methods which can be called using the MyoManger.
 
 ## Known Issues
 
